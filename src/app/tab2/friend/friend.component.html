@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Tab 2
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-searchbar [(ngModel)]="search"></ion-searchbar>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-card>
+  <ion-card-content>
+    <img [src]="person.avatar">
+  </ion-card-content>
+  <ion-card-header>
+    <ion-card-title>
+      {{person.first_name}}
+      {{person.last_name}}
+    </ion-card-title>
+    <ion-card-content>
+      <ion-label>
+        {{person.employment.title}}
+      </ion-label>
+    </ion-card-content>
+  </ion-card-header>
+  <ion-card-content>
+    <h2 href="#">{{person.email}}</h2>
+    <h2 href="#">{{person.phone_number}}</h2>
+
+  </ion-card-content>
+</ion-card>>
